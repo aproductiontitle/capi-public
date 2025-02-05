@@ -1,69 +1,98 @@
-# Welcome to your Lovable project
+# CAPI - Campaign AI Platform Interface
 
-## Project info
+## Overview
 
-**URL**: https://lovable.dev/projects/36537c70-d4c9-4741-aad4-07e3b138a4bc
+CAPI is a powerful web application that enables businesses to create, manage, and execute automated phone campaigns using conversational AI. Built with modern web technologies, it provides a seamless interface for managing AI-powered voice assistants and phone campaigns at scale.
 
-## How can I edit this code?
+## Key Features
 
-There are several ways of editing your application.
+- **AI Voice Assistants**: Create and customize AI assistants with specific personalities and behaviors
+- **Campaign Management**: Schedule and manage automated calling campaigns
+- **Contact Management**: Import and organize contact lists
+- **Real-time Analytics**: Monitor campaign performance, call durations, and success rates
+- **Voice Integration**: Seamless integration with VAPI.ai for natural voice synthesis
+- **Team Collaboration**: Multi-user support with role-based access control
 
-**Use Lovable**
+## Technology Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/36537c70-d4c9-4741-aad4-07e3b138a4bc) and start prompting.
+- **Frontend**: React + TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS + shadcn/ui
+- **Backend**: Supabase (Authentication, Database, Storage)
+- **Voice AI**: VAPI.ai
+- **State Management**: TanStack Query
 
-Changes made via Lovable will be committed automatically to this repo.
+## Getting Started
 
-**Use your preferred IDE**
+### Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Node.js & npm - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- A Supabase account
+- VAPI.ai API credentials
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Local Development
 
-Follow these steps:
-
+1. Clone the repository:
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
 git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
 cd <YOUR_PROJECT_NAME>
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+2. Install dependencies:
+```sh
+npm install
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start the development server:
+```sh
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Configuration
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. Configure your environment variables in Supabase:
+   - VAPI API key
+   - Other necessary API credentials
 
-**Use GitHub Codespaces**
+2. Set up authentication providers in your Supabase project
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```
+src/
+├── components/     # Reusable UI components
+├── pages/         # Route components
+├── hooks/         # Custom React hooks
+├── types/         # TypeScript type definitions
+└── utils/         # Helper functions
+```
 
-This project is built with .
+## Deployment
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+You can deploy this project in several ways:
 
-## How can I deploy this project?
+1. **Using Lovable**:
+   - Visit [Lovable](https://lovable.dev/projects/36537c70-d4c9-4741-aad4-07e3b138a4bc)
+   - Click on Share -> Publish
 
-Simply open [Lovable](https://lovable.dev/projects/36537c70-d4c9-4741-aad4-07e3b138a4bc) and click on Share -> Publish.
+2. **Custom Domain**:
+   - For custom domain deployment, we recommend using Netlify
+   - Follow our [Custom domains guide](https://docs.lovable.dev/tips-tricks/custom-domain/)
 
-## I want to use a custom domain - is that possible?
+## Contributing
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
+
+## Security
+
+- All sensitive credentials are stored securely in Supabase
+- Row Level Security (RLS) policies protect data access
+- Regular security audits are performed
+
+## License
+
+This project is proprietary software. All rights reserved.
