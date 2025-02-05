@@ -1,0 +1,3 @@
+project_id = "paosmzezteofsedmvhbr"
+[check-scheduled-campaigns]
+verify_jwt = false

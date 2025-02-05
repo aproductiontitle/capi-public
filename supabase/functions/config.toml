@@ -1,0 +1,7 @@
+project_id = "paosmzezteofsedmvhbr"
+
+[execute-scheduled-campaigns]
+verify_jwt = false
+
+[check-scheduled-campaigns]
+verify_jwt = false
