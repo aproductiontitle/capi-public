@@ -67,18 +67,6 @@ src/
 └── utils/         # Helper functions
 ```
 
-## Deployment
-
-You can deploy this project in several ways:
-
-1. **Using Lovable**:
-   - Visit [Lovable](https://lovable.dev/projects/36537c70-d4c9-4741-aad4-07e3b138a4bc)
-   - Click on Share -> Publish
-
-2. **Custom Domain**:
-   - For custom domain deployment, we recommend using Netlify
-   - Follow our [Custom domains guide](https://docs.lovable.dev/tips-tricks/custom-domain/)
-
 ## Contributing
 
 1. Fork the repository
